@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Turing Playlist</h1>
+          <h1>Turing Hello</h1>
         </header>
         <div className="App-background">
           <main>
