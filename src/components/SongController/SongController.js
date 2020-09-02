@@ -1,12 +1,18 @@
 import React from 'react';
+import './SongController.css'
 
-const SongController = ( { changeSong } ) => {
-  
+const SongController = (props) => {
+  console.log('your props', props)
+  console.log('your song', props.currentSong.songName)
   return (
-    <div>
-      <button>Next Song</button>
+    <div className='currentSong'>
+      <h1>{props.currentSong.songName}</h1>
+      <h2>{props.currentSong.artistName}</h2>
+      <h2>{props.currentSong.link}</h2>
+      <button onClick={props.changeSong}>Next Song</button>
     </div>
   );
 };
 
 export default SongController;
+// onClick = { props.changeSong }
