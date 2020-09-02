@@ -1,10 +1,10 @@
 import React from 'react'
-// import './DisplayQueue'
+import './DisplayQueue.css'
 
 const DisplayQueue = (props) => {
   const songQueue = props.songQueue.map(song => {
     return (
-      < div className='Queued'>
+      < div className='queued'>
       <h1>{song.songName}</h1>
       <h2>{song.artistName}</h2>
       <h2>{song.link}</h2>
@@ -13,8 +13,10 @@ const DisplayQueue = (props) => {
   })
 
   return (
-    <section>
+    <section className='songSect'>
       {songQueue}
     </section>
   )
 }
+
+export default DisplayQueue
