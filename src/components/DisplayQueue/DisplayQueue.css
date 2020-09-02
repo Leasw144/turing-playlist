@@ -1,0 +1,11 @@
+/* .songSect {
+  display: flex;
+
+} */
+
+.queued {
+  background: antiquewhite;
+  padding: 1vh;
+  margin: 3vh;
+  width: 40vh;
+}
