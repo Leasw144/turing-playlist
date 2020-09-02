@@ -15,4 +15,3 @@ const SongController = (props) => {
 };
 
 export default SongController;
-// onClick = { props.changeSong }
